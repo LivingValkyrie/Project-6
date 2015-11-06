@@ -10,7 +10,7 @@ GameObject:
   - 4: {fileID: 407764}
   - 33: {fileID: 3390370}
   - 23: {fileID: 2347278}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Direction_Orientation
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33,7 +33,7 @@ GameObject:
   - 114: {fileID: 11473332}
   - 114: {fileID: 11472966}
   - 114: {fileID: 11444914}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -50,7 +50,7 @@ GameObject:
   - 4: {fileID: 498336}
   - 33: {fileID: 3378658}
   - 23: {fileID: 2360722}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Capsule
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -67,7 +67,7 @@ GameObject:
   - 4: {fileID: 479764}
   - 20: {fileID: 2069504}
   - 81: {fileID: 8161334}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: MainCamera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -153,6 +153,7 @@ Camera:
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
+  m_TargetEye: 3
   m_HDR: 0
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
@@ -391,7 +392,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   syncHealth: 0
-  playerName: 
+  playerName: Steve
   playerHealth: 100
   respawnHealth: 75
   playerNameText: {fileID: 0}
@@ -442,6 +443,10 @@ Prefab:
       propertyPath: camera
       value: 
       objectReference: {fileID: 2069504}
+    - target: {fileID: 0}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 140314}
