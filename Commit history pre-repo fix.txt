@@ -1,0 +1,42 @@
+Commits on Oct 26, 2015
+ @nboehning	nboehning	Added lab 6 as base project …	bc52667
+ @LivingValkyrie	LivingValkyrie	Merge pull request #1 from nboehning/master …	2dc1206
+ @nboehning	nboehning	Merge remote-tracking branch 'refs/remotes/LivingValkyrie/master'	b006bb1
+Commits on Oct 27, 2015
+ @nboehning	nboehning	Did some testing, updated player health …	8c405ec
+ @LivingValkyrie	LivingValkyrie	added random generation for levels …	aef382f
+ @nboehning	nboehning	Finished the player …	f992fb8
+ @nboehning	nboehning	Merge remote-tracking branch 'refs/remotes/LivingValkyrie/master' …	4de30f2
+ @LivingValkyrie	LivingValkyrie	Merge pull request #2 from nboehning/master …	2cebddf
+Commits on Oct 29, 2015
+ @nboehning	nboehning	Added the TDD …	c10ac53
+ @LivingValkyrie	LivingValkyrie	Merge pull request #3 from nboehning/master …	2a674ab
+Commits on Oct 30, 2015
+ @agentronin316	agentronin316	Layout Cloning on Client Completed	63b57bf
+ @agentronin316	agentronin316	Logic for Data gathering in Menu Completed …	de28879
+ @agentronin316	agentronin316	Data Collection UI Completed …	9cac400
+ @LivingValkyrie	LivingValkyrie	Merge pull request #4 from agentronin316/master …	80d55b3
+ @LivingValkyrie	LivingValkyrie	fixed bug …	eb09595
+ @LivingValkyrie	LivingValkyrie	Merge pull request #5 from LivingValkyrie/pre-marshall_merge …	7adbd57
+Commits on Oct 31, 2015
+ @LivingValkyrie	LivingValkyrie	initial launcher project. …	16f6b68
+ @LivingValkyrie	LivingValkyrie	launcher now closes after game launchers. build settings have default… …	0712660
+ @agentronin316	agentronin316	Merge remote-tracking branch 'refs/remotes/LivingValkyrie/master'	8203fdf
+ @agentronin316	agentronin316	Gameplay Scene Created.	e0a6533
+Commits on Nov 01, 2015
+ @LivingValkyrie	LivingValkyrie	Merge pull request #6 from LivingValkyrie/LauncherWork …	61989a7
+ @agentronin316	agentronin316	Merge remote-tracking branch 'refs/remotes/LivingValkyrie/master'	6e09243
+Commits on Nov 02, 2015
+ @nboehning	nboehning	Merge remote-tracking branch 'refs/remotes/LivingValkyrie/master'	4a00af6
+ @nboehning	nboehning	Changed background color of the new input fields …	4a05080
+Commits on Nov 03, 2015
+ @agentronin316	agentronin316	Player Name Added to Host Setup …	c9bdb4f
+ @LivingValkyrie	LivingValkyrie	Merge pull request #7 from agentronin316/master …	ae09825
+ @agentronin316	agentronin316	Updated Online Scene …	08ab1d8
+ @agentronin316	agentronin316	Merge remote-tracking branch 'refs/remotes/LivingValkyrie/master'	7574e4e
+ @agentronin316	agentronin316	IL error resolved. …	ff6c14a
+Commits on Nov 04, 2015
+ @LivingValkyrie	LivingValkyrie	Merge pull request #8 from agentronin316/master …	6ae3ea6
+ @nboehning	nboehning	Merge remote-tracking branch 'refs/remotes/LivingValkyrie/master' …	9d790c8
+Commits on Nov 05, 2015
+ @nboehning	nboehning	Started adding code for shooting …	77c5c71
