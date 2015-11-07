@@ -1,34 +1,30 @@
-Initialize engine version: 5.1.3f1 (b0a23b31c3d8)
+Initialize engine version: 5.1.2f1 (afd2369b692a)
 GfxDevice: creating device client; threaded=1
 Direct3D:
     Version:  Direct3D 11.0 [level 11.0]
-    Renderer: NVIDIA GeForce GTX 550 Ti (ID=0x1244)
-    Vendor:   NVIDIA
-    VRAM:     972 MB
+    Renderer: Intel(R) HD Graphics 4600 (ID=0x416)
+    Vendor:   Intel
+    VRAM:     128 MB
 Begin MonoManager ReloadAssembly
-Platform assembly: C:\Unity Projects\Project-6\UnityProject\Testing_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading C:\Unity Projects\Project-6\UnityProject\Testing_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: C:\Unity Projects\Project-6\UnityProject\Testing_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
-Loading C:\Unity Projects\Project-6\UnityProject\Testing_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
-Platform assembly: C:\Unity Projects\Project-6\UnityProject\Testing_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading C:\Unity Projects\Project-6\UnityProject\Testing_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: C:\Unity Projects\Project-6\UnityProject\Testing_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading C:\Unity Projects\Project-6\UnityProject\Testing_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-Platform assembly: C:\Unity Projects\Project-6\UnityProject\Testing_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
-Loading C:\Unity Projects\Project-6\UnityProject\Testing_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-Platform assembly: C:\Unity Projects\Project-6\UnityProject\Testing_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
-Loading C:\Unity Projects\Project-6\UnityProject\Testing_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
-Platform assembly: C:\Unity Projects\Project-6\UnityProject\Testing_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
-Loading C:\Unity Projects\Project-6\UnityProject\Testing_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-Platform assembly: C:\Unity Projects\Project-6\UnityProject\Testing_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading C:\Unity Projects\Project-6\UnityProject\Testing_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-Platform assembly: C:\Unity Projects\Project-6\UnityProject\Testing_Data\Managed\System.Core.dll (this message is harmless)
-- Completed reload, in  0.217 seconds
+Platform assembly: C:\Users\matthew\Projects\GitHub\P06-fps-base\UnityProject\Testing_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\matthew\Projects\GitHub\P06-fps-base\UnityProject\Testing_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\matthew\Projects\GitHub\P06-fps-base\UnityProject\Testing_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\Users\matthew\Projects\GitHub\P06-fps-base\UnityProject\Testing_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\matthew\Projects\GitHub\P06-fps-base\UnityProject\Testing_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\matthew\Projects\GitHub\P06-fps-base\UnityProject\Testing_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\matthew\Projects\GitHub\P06-fps-base\UnityProject\Testing_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\matthew\Projects\GitHub\P06-fps-base\UnityProject\Testing_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\matthew\Projects\GitHub\P06-fps-base\UnityProject\Testing_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\matthew\Projects\GitHub\P06-fps-base\UnityProject\Testing_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\matthew\Projects\GitHub\P06-fps-base\UnityProject\Testing_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading C:\Users\matthew\Projects\GitHub\P06-fps-base\UnityProject\Testing_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+- Completed reload, in  0.157 seconds
 <RI> Initializing input.
 <RI> Input initialized.
-desktop: 2560x1440 59Hz; virtual: 6400x1440 at -1920,0
+desktop: 3200x1800 60Hz; virtual: 3200x1800 at 0,0
 <RI> Initialized touch support.
-Platform assembly: C:\Unity Projects\Project-6\UnityProject\Testing_Data\Managed\System.dll (this message is harmless)
+Platform assembly: C:\Users\matthew\Projects\GitHub\P06-fps-base\UnityProject\Testing_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\matthew\Projects\GitHub\P06-fps-base\UnityProject\Testing_Data\Managed\System.dll (this message is harmless)
 Curr state = MENU_MAIN
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
@@ -37,97 +33,30 @@ Transition from Main to Start
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
 
-Transition from Start to Main
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
-
-Transition from Main to Connect
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
-
-ArgumentOutOfRangeException: Argument is out of range.
-Parameter name: index
-  at System.Collections.Generic.List`1[UnityEngine.UICharInfo].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
-  at UnityEngine.UI.InputField.GenerateCursor (System.Collections.Generic.List`1 vbo, Vector2 roundingOffset) [0x00000] in <filename unknown>:0 
-  at UnityEngine.UI.InputField.OnFillVBO (System.Collections.Generic.List`1 vbo) [0x00000] in <filename unknown>:0 
-  at UnityEngine.UI.InputField.UpdateGeometry () [0x00000] in <filename unknown>:0 
-  at UnityEngine.UI.InputField.Rebuild (CanvasUpdate update) [0x00000] in <filename unknown>:0 
-  at UnityEngine.UI.CanvasUpdateRegistry.PerformUpdate () [0x00000] in <filename unknown>:0 
-UnityEngine.Debug:Internal_LogException(Exception, Object)
-UnityEngine.Debug:LogException(Exception, Object)
-UnityEngine.UI.CanvasUpdateRegistry:PerformUpdate()
-UnityEngine.Canvas:SendWillRenderCanvases()
- 
-(Filename:  Line: -1)
-
-ArgumentOutOfRangeException: Argument is out of range.
-Parameter name: index
-  at System.Collections.Generic.List`1[UnityEngine.UICharInfo].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
-  at UnityEngine.UI.InputField.GenerateCursor (System.Collections.Generic.List`1 vbo, Vector2 roundingOffset) [0x00000] in <filename unknown>:0 
-  at UnityEngine.UI.InputField.OnFillVBO (System.Collections.Generic.List`1 vbo) [0x00000] in <filename unknown>:0 
-  at UnityEngine.UI.InputField.UpdateGeometry () [0x00000] in <filename unknown>:0 
-  at UnityEngine.UI.InputField+<CaretBlink>c__Iterator2.MoveNext () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-Updating player name to... 
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
-
-Transition from Connect to Connecting to Server
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
-
-HLAPI CRC channel count error local: 3 remote: 4
+Transition from Start to Host Starting
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
 
 Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-CRC Local Dump Script_PlayerHealth : 0
+UnloadTime: 3.471919 ms
+input: 100
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
 
-CRC Local Dump Script_PlayerSync : 0
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
-
-CRC Local Dump ScriptPlayerShoot : 0
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
-
-CRC Local Dump GenerateObstacles : 0
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
-
-CRC Remote Dump ScriptPlayerShoot : 0
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
-
-CRC Remote Dump Script_PlayerHealth : 0
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
-
-CRC Remote Dump Script_PlayerSync : 0
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
-
-CRC Remote Dump GenerateObstacles : 0
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
-
-UnloadTime: 2.909931 ms
 Setting up 2 worker threads for Enlighten.
-  Thread -> id: 16950 -> priority: 1 
-  Thread -> id: 17c20 -> priority: 1 
+  Thread -> id: 3e28 -> priority: 1 
+  Thread -> id: 3e2c -> priority: 1 
 
-Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 302.
-Total: 0.248128 ms (FindLiveObjects: 0.024450 ms CreateObjectMapping: 0.011772 ms MarkObjects: 0.204057 ms  DeleteObjects: 0.007546 ms)
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 355.
+Total: 0.317707 ms (FindLiveObjects: 0.019594 ms CreateObjectMapping: 0.015862 ms MarkObjects: 0.271987 ms  DeleteObjects: 0.009797 ms)
 
 input: 100
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
 
-Trying to send command for non-local player.
+Log: connection {1} has been disconnected by timeout; address {::ffff:127.0.0.1:64366}
+input: 100
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
 
+Log: connection {1} has been disconnected by timeout; address {::ffff:127.0.0.1:64367}
