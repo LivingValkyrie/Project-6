@@ -14,6 +14,8 @@ public class GenerateObstacles : NetworkBehaviour {
 
     [SyncVar]
     public int objectCount;
+    [SyncVar]
+    Vector3 curObstacle;
     
     public Vector2 xBounds, yBounds, zBounds;
 
@@ -24,8 +26,7 @@ public class GenerateObstacles : NetworkBehaviour {
     #endregion
 
     //@author Marshall Mason
-    void Start()
-	{
+    void Start() {
         MenuDataHolder data = GameObject.Find("Network Manager").GetComponent<MenuDataHolder>();
         
         //pull in data from MenuDataHolder
@@ -37,6 +38,22 @@ public class GenerateObstacles : NetworkBehaviour {
             zBounds = new Vector2(data.minZ, data.maxZ);
             Generate();
         }
+        else
+        {
+            for (int i = 0; i < objectCount; i++)
+            {
+                CmdFetchMap(i);
+                data.InstantiateObstacle(curObstacle, obstaclePrefab);
+            }
+        }
+    }
+
+    //@author Marshall Mason
+    [Command]
+    void CmdFetchMap(int index)
+    {
+        Vector3 toReturn = obstacles[index].transform.position;
+        curObstacle = toReturn;
     }
 
     void Generate() {
@@ -51,32 +68,4 @@ public class GenerateObstacles : NetworkBehaviour {
             obstacles[i].transform.position = rndPos;
         }
     }
-
-	//@author Marshall Mason
-	void OnPlayerConnect(NetworkPlayer client)
-	{
-		NetworkViewID[] networkViewIDs = new NetworkViewID[obstacles.Length];
-		Vector3[] positions = new Vector3[obstacles.Length];
-
-		for (int i = 0; i < obstacles.Length; i++)
-		{
-			networkViewIDs[i] = obstacles[i].GetComponent<NetworkView>().viewID;
-			positions[i] = obstacles[i].transform.position;
-		}
-
-		GetComponent<NetworkView> ().RPC ("SpawnObstacles", client, networkViewIDs, positions);
-	}
-
-	[RPC] //@author Marshall Mason
-	void SpawnObstacles(NetworkViewID[] networkViewIDs, Vector3[] positions)
-	{
-		for (int i = 0; i < networkViewIDs.Length; i++)
-		{
-			if(!networkViewIDs[i].isMine)
-			{
-				GameObject temp = (GameObject)Instantiate (obstaclePrefab, positions[i], Quaternion.identity);
-				temp.GetComponent<NetworkView>().viewID = networkViewIDs[i];
-			}
-		}
-	}
 }
