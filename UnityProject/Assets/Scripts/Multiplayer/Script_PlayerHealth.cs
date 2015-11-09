@@ -52,6 +52,8 @@ public class Script_PlayerHealth : NetworkBehaviour
 
         // Sync the players initial health
         CmdSendHealthToServer(playerHealth);
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
 
     private void Update()

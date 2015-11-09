@@ -68,7 +68,7 @@ public class ScriptPlayerShoot : NetworkBehaviour
                 CmdPlayerShot(hit.collider.name);
             }
             // If the raycast hit a generated obstacle
-            if (hit.collider.tag == "Obstacle")
+            else if (hit.collider.tag == "Obstacle")
             {
                 // Teleport on top of it
                 transform.position = hit.transform.GetChild(0).position;
