@@ -45,6 +45,7 @@ public class Script_MenuState : MonoBehaviour {
     [HideInInspector] public string playerName; // Variable to hold the player name until the player can fetch it.
 
     public Text numObstacles, minX, maxX, minY, maxY, minZ, maxZ; //References to the Text Boxes for server setup
+    public Text defNumObstacles, defMinX, defMaxX, defMinY, defMaxY, defMinZ, defMaxZ; //References to the Text Boxes for server setup
     public Text hostName, clientName; //References to the Text Boxes for player name in the Host and Connection Screens
 
     // Use this for initialization
@@ -188,10 +189,20 @@ public class Script_MenuState : MonoBehaviour {
                 } else if (CurrentState == MenuStates.SETUP_STARTING_SERVER) {
                     Debug.Log("Transitioning from Start to Server Starting");
                     data.isServer = true;
+                    // Updated by Nathan to have default values being set from placeholder if the user didn't input
+                    // anything into the regular text field.
                     try {
                         if (minX.text == null || minX.text == "" || minY.text == null || minY.text == "" || minZ.text == null ||
                             minZ.text == "" || numObstacles.text == null || numObstacles.text == "") {
-                            throw new UnityException();
+                            data.minX = System.Convert.ToSingle(defMinX.text);
+                            data.maxX = System.Convert.ToSingle(defMaxX.text);
+                            data.minY = System.Convert.ToSingle(defMinY.text);
+                            data.maxY = System.Convert.ToSingle(defMaxY.text);
+                            data.minZ = System.Convert.ToSingle(defMinZ.text);
+                            data.maxZ = System.Convert.ToSingle(defMaxZ.text);
+                            data.numObstacles = System.Convert.ToInt32(defNumObstacles.text);
+                            playerName = GameObject.Find("Host Name Text").GetComponent<Text>().text;
+                            manager.StartServer();
                         } else {
                             data.minX = System.Convert.ToSingle(minX.text);
                             data.maxX = System.Convert.ToSingle(maxX.text);
@@ -211,9 +222,19 @@ public class Script_MenuState : MonoBehaviour {
                     Debug.Log("Transition from Start to Host Starting");
                     data.isServer = true;
                     try {
+                        // Updated by Nathan to have default values being set from placeholder if the user didn't input
+                        // anything into the regular text field.
                         if (minX.text == null || minX.text == "" || minY.text == null || minY.text == "" || minZ.text == null ||
                             minZ.text == "" || numObstacles.text == null || numObstacles.text == "") {
-                            throw new UnityException();
+                            data.minX = System.Convert.ToSingle(defMinX.text);
+                            data.maxX = System.Convert.ToSingle(defMaxX.text);
+                            data.minY = System.Convert.ToSingle(defMinY.text);
+                            data.maxY = System.Convert.ToSingle(defMaxY.text);
+                            data.minZ = System.Convert.ToSingle(defMinZ.text);
+                            data.maxZ = System.Convert.ToSingle(defMaxZ.text);
+                            data.numObstacles = System.Convert.ToInt32(defNumObstacles.text);
+                            playerName = hostName.text;
+                            manager.StartHost();
                         } else {
                             data.minX = System.Convert.ToSingle(minX.text);
                             data.maxX = System.Convert.ToSingle(maxX.text);

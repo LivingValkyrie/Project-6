@@ -154,6 +154,7 @@ Camera:
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
+  m_TargetEye: 3
   m_HDR: 0
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
@@ -359,10 +360,8 @@ MonoBehaviour:
     name: Pistol
     damage: 10
     range: 50
+    rateOfFire: 1000
   camera: {fileID: 2069504}
-  mask:
-    serializedVersion: 2
-    m_Bits: 0
 --- !u!114 &11472966
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -408,7 +407,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   syncHealth: 0
-  playerName: Steve
+  playerName: 
   playerHealth: 100
   respawnHealth: 75
   playerNameText: {fileID: 0}
@@ -462,6 +461,18 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: m_Layer
       value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: weapon.rateOfFire
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_IsKinematic
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: playerName
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
