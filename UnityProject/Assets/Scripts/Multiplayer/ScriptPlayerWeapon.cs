@@ -9,4 +9,7 @@ public class ScriptPlayerWeapon
     public int damage = 10;
 
     public float range = 50f;
+
+    [Tooltip("Rate of fire of the weapon (ms)")]
+    public float rateOfFire = 500;
 }

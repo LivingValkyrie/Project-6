@@ -1,0 +1,119 @@
+Initialize engine version: 5.1.3f1 (b0a23b31c3d8)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 550 Ti (ID=0x1244)
+    Vendor:   NVIDIA
+    VRAM:     972 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Unity Projects\Project-6\UnityProject\Testing2_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Unity Projects\Project-6\UnityProject\Testing2_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Unity Projects\Project-6\UnityProject\Testing2_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\Unity Projects\Project-6\UnityProject\Testing2_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Unity Projects\Project-6\UnityProject\Testing2_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Unity Projects\Project-6\UnityProject\Testing2_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Unity Projects\Project-6\UnityProject\Testing2_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Unity Projects\Project-6\UnityProject\Testing2_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Unity Projects\Project-6\UnityProject\Testing2_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Unity Projects\Project-6\UnityProject\Testing2_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Unity Projects\Project-6\UnityProject\Testing2_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading C:\Unity Projects\Project-6\UnityProject\Testing2_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+Platform assembly: C:\Unity Projects\Project-6\UnityProject\Testing2_Data\Managed\System.Core.dll (this message is harmless)
+- Completed reload, in  0.166 seconds
+<RI> Initializing input.
+<RI> Input initialized.
+desktop: 2560x1440 59Hz; virtual: 6400x1440 at -1920,0
+<RI> Initialized touch support.
+Platform assembly: C:\Unity Projects\Project-6\UnityProject\Testing2_Data\Managed\System.dll (this message is harmless)
+Curr state = MENU_MAIN
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Transition from Main to Connect
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Transition from Connect to Connecting to Server
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 2.935589 ms
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 22c28 -> priority: 1 
+  Thread -> id: 23030 -> priority: 1 
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 312.
+Total: 0.265335 ms (FindLiveObjects: 0.033506 ms CreateObjectMapping: 0.012074 ms MarkObjects: 0.210396 ms  DeleteObjects: 0.009055 ms)
+
+Trying to send command for non-local player.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Trying to send command for non-local player.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Trying to send command for non-local player.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Trying to send command for non-local player.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Trying to send command for non-local player.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Trying to send command for non-local player.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+input: 100
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+input: 90
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+input: 80
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+input: 70
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+input: 60
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+input: 50
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Log: connection {1} has been disconnected by timeout; address {::ffff:127.0.0.1:7777}
+aissp: time {136392} lastRecTime {134346} DisTme {2000}, rtt {0} 
+ 
+(Filename:  Line: 1845)
+
+UNet Client Disconnect Error: Timeout
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.680996 ms
+Multiple NetworkManagers detected in the scene. Only one NetworkManager can exist at a time. The duplicate NetworkManager will not be used.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Curr state = MENU_MAIN
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 565.
+Total: 0.526444 ms (FindLiveObjects: 0.022035 ms CreateObjectMapping: 0.034110 ms MarkObjects: 0.458525 ms  DeleteObjects: 0.011470 ms)
+

@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using System.Collections;
 using UnityEngine.Networking;
 
@@ -9,8 +10,7 @@ public class ScriptPlayerShoot : NetworkBehaviour
     [SerializeField]
     private Camera camera;
 
-    [SerializeField]
-    private LayerMask mask;
+    private bool canFire = true;
 
     void Start()
     {
@@ -27,7 +27,12 @@ public class ScriptPlayerShoot : NetworkBehaviour
         {
             if (Input.GetButtonDown("Fire1"))
             {
-                Shoot();
+                if (canFire)
+                {
+                    Shoot();
+                    canFire = false;
+                    StartCoroutine(RecycleWeapon());
+                }
             }
         }
     }
@@ -37,21 +42,35 @@ public class ScriptPlayerShoot : NetworkBehaviour
     {
         RaycastHit hit;
 
-        if (Physics.Raycast(camera.transform.position, camera.transform.forward, out hit, weapon.range, mask))
+        if (Physics.Raycast(camera.transform.position, camera.transform.forward, out hit, weapon.range))
         {
-            if (hit.collider.tag == "Untagged")
+                
+            if (hit.collider.tag == "Player")
             {
                 CmdPlayerShot(hit.collider.name);
             }
-            
+            if (hit.collider.tag == "Obstacle")
+            {
+                transform.position = hit.transform.GetChild(0).position;
+            }
+            else
+            {
+                Debug.Log("We hit: " + hit.collider.name);
+            }
         }
     }
 
     [Command]
-    void CmdPlayerShot(string name)
+    void CmdPlayerShot(string inputName)
     {
-        Debug.Log(name + " has been shot.");
+        Debug.Log(inputName + " has been shot.");
 
-        GameObject.Find(name).GetComponent<Script_PlayerHealth>().RemoveHealth(5);
+        GameObject.Find(inputName).GetComponent<Script_PlayerHealth>().RemoveHealth(weapon.damage);
+    }
+
+    IEnumerator RecycleWeapon()
+    {
+        yield return new WaitForSeconds(TimeSpan.FromMilliseconds(weapon.rateOfFire).Seconds);
+        canFire = true;
     }
 }

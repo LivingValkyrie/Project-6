@@ -48,9 +48,9 @@ public class Script_PlayerSync : NetworkBehaviour {
             // Makes it so user can only control their player
             Destroy(myController);
             Destroy(myRigidbody);
-            Destroy(myCollider);
             Destroy(myCameraObject);
             gameObject.layer = LayerMask.NameToLayer("RemotePlayer");
+
         }
     }
 

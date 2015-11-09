@@ -45,6 +45,7 @@ public class Script_MenuState : MonoBehaviour {
     [HideInInspector] public string playerName; // Variable to hold the player name until the player can fetch it.
 
     public Text numObstacles, minX, maxX, minY, maxY, minZ, maxZ; //References to the Text Boxes for server setup
+    public Text defNumObstacles, defMinX, defMaxX, defMinY, defMaxY, defMinZ, defMaxZ; //References to the Text Boxes for server setup
     public Text hostName, clientName; //References to the Text Boxes for player name in the Host and Connection Screens
 
     // Use this for initialization
@@ -191,7 +192,15 @@ public class Script_MenuState : MonoBehaviour {
                     try {
                         if (minX.text == null || minX.text == "" || minY.text == null || minY.text == "" || minZ.text == null ||
                             minZ.text == "" || numObstacles.text == null || numObstacles.text == "") {
-                            throw new UnityException();
+                            data.minX = System.Convert.ToSingle(defMinX.text);
+                            data.maxX = System.Convert.ToSingle(defMaxX.text);
+                            data.minY = System.Convert.ToSingle(defMinY.text);
+                            data.maxY = System.Convert.ToSingle(defMaxY.text);
+                            data.minZ = System.Convert.ToSingle(defMinZ.text);
+                            data.maxZ = System.Convert.ToSingle(defMaxZ.text);
+                            data.numObstacles = System.Convert.ToInt32(defNumObstacles.text);
+                            playerName = GameObject.Find("Host Name Text").GetComponent<Text>().text;
+                            manager.StartServer();
                         } else {
                             data.minX = System.Convert.ToSingle(minX.text);
                             data.maxX = System.Convert.ToSingle(maxX.text);
@@ -213,7 +222,15 @@ public class Script_MenuState : MonoBehaviour {
                     try {
                         if (minX.text == null || minX.text == "" || minY.text == null || minY.text == "" || minZ.text == null ||
                             minZ.text == "" || numObstacles.text == null || numObstacles.text == "") {
-                            throw new UnityException();
+                            data.minX = System.Convert.ToSingle(defMinX.text);
+                            data.maxX = System.Convert.ToSingle(defMaxX.text);
+                            data.minY = System.Convert.ToSingle(defMinY.text);
+                            data.maxY = System.Convert.ToSingle(defMaxY.text);
+                            data.minZ = System.Convert.ToSingle(defMinZ.text);
+                            data.maxZ = System.Convert.ToSingle(defMaxZ.text);
+                            data.numObstacles = System.Convert.ToInt32(defNumObstacles.text);
+                            playerName = hostName.text;
+                            manager.StartHost();
                         } else {
                             data.minX = System.Convert.ToSingle(minX.text);
                             data.maxX = System.Convert.ToSingle(maxX.text);

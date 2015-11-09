@@ -30,7 +30,7 @@ public class Script_PlayerHealth : NetworkBehaviour
         playerNameText = GameObject.Find("TextPlayerName").GetComponent<Text>();
         playerHealthText = GameObject.Find("TextPlayerHealth").GetComponent<Text>();
         respawnUI = GameObject.Find("Canvas").transform.GetChild(3).gameObject;
-         respawnTimeText = respawnUI.transform.GetChild(1).GetComponent<Text>();
+        respawnTimeText = respawnUI.transform.GetChild(1).GetComponent<Text>();
 
 
         // Sets the player name to host if it doesn't have a name
@@ -40,6 +40,8 @@ public class Script_PlayerHealth : NetworkBehaviour
 
         // Sets the text of the text field to the player name
         playerNameText.text = playerName;
+
+        gameObject.name = playerName;
 
         // Set the variable that will be counted down to the designer defined variable
         countdownTime = respawnTime;
@@ -52,6 +54,13 @@ public class Script_PlayerHealth : NetworkBehaviour
     {
         if (isLocalPlayer)
         {
+            if (playerHealth > 60)
+                playerHealthText.color = Color.green;
+            else if (playerHealth > 25)
+                playerHealthText.color = Color.yellow;
+            else
+                playerHealthText.color = Color.red;
+                
             playerHealthText.text = "Health: " + playerHealth;
             if (playerHealth <= 0)
             {
