@@ -189,6 +189,8 @@ public class Script_MenuState : MonoBehaviour {
                 } else if (CurrentState == MenuStates.SETUP_STARTING_SERVER) {
                     Debug.Log("Transitioning from Start to Server Starting");
                     data.isServer = true;
+                    // Updated by Nathan to have default values being set from placeholder if the user didn't input
+                    // anything into the regular text field.
                     try {
                         if (minX.text == null || minX.text == "" || minY.text == null || minY.text == "" || minZ.text == null ||
                             minZ.text == "" || numObstacles.text == null || numObstacles.text == "") {
@@ -220,6 +222,8 @@ public class Script_MenuState : MonoBehaviour {
                     Debug.Log("Transition from Start to Host Starting");
                     data.isServer = true;
                     try {
+                        // Updated by Nathan to have default values being set from placeholder if the user didn't input
+                        // anything into the regular text field.
                         if (minX.text == null || minX.text == "" || minY.text == null || minY.text == "" || minZ.text == null ||
                             minZ.text == "" || numObstacles.text == null || numObstacles.text == "") {
                             data.minX = System.Convert.ToSingle(defMinX.text);
