@@ -62,10 +62,10 @@ public class ScriptPlayerShoot : NetworkBehaviour
         if (Physics.Raycast(camera.transform.position, camera.transform.forward, out hit, weapon.range))
         {
             // If the raycast hit a player
-            if (hit.collider.tag == "Player")
+            if (hit.transform.tag == "Player")
             {
                 // Call function to update players health
-                CmdPlayerShot(hit.collider.name);
+                CmdPlayerShot(hit.transform.name);
             }
             // If the raycast hit a generated obstacle
             else if (hit.collider.tag == "Obstacle")
@@ -76,7 +76,7 @@ public class ScriptPlayerShoot : NetworkBehaviour
             else
             {
                 // Display what the shot hit
-                Debug.Log("We hit: " + hit.collider.name);
+                Debug.Log("We hit: " + hit.transform.name);
             }
         }
     }

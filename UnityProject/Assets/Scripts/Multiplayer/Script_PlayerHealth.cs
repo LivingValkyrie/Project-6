@@ -28,6 +28,7 @@ public class Script_PlayerHealth : NetworkBehaviour
     //           Keeps the players life synced inside of the server.
     public override void OnStartClient()
     {
+
         // Finds the various UI elements within the scene when its created
         playerNameText = GameObject.Find("TextPlayerName").GetComponent<Text>();
         playerHealthText = GameObject.Find("TextPlayerHealth").GetComponent<Text>();
@@ -61,15 +62,15 @@ public class Script_PlayerHealth : NetworkBehaviour
         if (isLocalPlayer)
         {
             // Change the color of the player health text based on how much is left
-            if (playerHealth > 60)
+            if (syncHealth > 60)
                 playerHealthText.color = Color.green;
-            else if (playerHealth > 25)
+            else if (syncHealth > 25)
                 playerHealthText.color = Color.yellow;
             else
                 playerHealthText.color = Color.red;
                 
             // Set the text to the players health
-            playerHealthText.text = "Health: " + playerHealth;
+            playerHealthText.text = "Health: " + syncHealth;
             
             // If the players health is less than or equal to zero
             if (playerHealth <= 0)
@@ -106,11 +107,10 @@ public class Script_PlayerHealth : NetworkBehaviour
     {
         // Adds health to the local player, and sends a command to update the players health 
         // within the server.
-        if (isLocalPlayer)
-        {
-            playerHealth += healthToAdd;
-            CmdSendHealthToServer(playerHealth);
-        }
+
+        playerHealth += healthToAdd;
+        CmdSendHealthToServer(playerHealth);
+
     }
 
     [Client]
@@ -118,11 +118,10 @@ public class Script_PlayerHealth : NetworkBehaviour
     {
         // Removes health from the local player, and sends a command to update the players heath
         // within the server
-        if (isLocalPlayer)
-        {
-            playerHealth -= healthToRemove;
-            CmdSendHealthToServer(playerHealth);
-        }
+
+        playerHealth -= healthToRemove;
+        Debug.Log(transform.name + " health: " + playerHealth);
+        CmdSendHealthToServer(playerHealth);
     }
 
     // Sets the synced variable to the updated player health
